@@ -23,7 +23,7 @@
 
 // trackball bus
 &spi0 {
-	status = "okay"; //okay
+	status = "disabled"; // временно отключено для сборки на upstream ZMK
 	sck-pin = <8>; //old
     mosi-pin = <17>; //old
     miso-pin = <17>;//old same as mosi (3-wire spi)
@@ -31,6 +31,6 @@
 };
 
 &trackball {
-	status = "okay"; //okay
+	status = "disabled"; // временно отключено для сборки на upstream ZMK
 	irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 };
